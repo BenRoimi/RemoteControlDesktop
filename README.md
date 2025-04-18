@@ -12,7 +12,7 @@ This project focuses on high-performance transmission using custom protocol desi
 - 🧠 **Peer-to-peer (P2P)** architecture – no central server
 - 📡 **Raw socket communication** (TCP or UDP) with custom protocol
 - 🖱️ **Remote mouse and keyboard control**
-- 🧮 **Network traffic optimization** (e.g., simulated congestion window – CWND)
+- 🧮 **Network traffic optimization** - H264 compression
 - 🔐 Potential for future encryption and authentication modules
 
 ---
@@ -20,10 +20,11 @@ This project focuses on high-performance transmission using custom protocol desi
 ## 🔧 Tech Stack
 
 - **C++**
-- **Raw Sockets / WinSock / BSD sockets**
-- **Screen capture APIs** (e.g., GDI, X11, or cross-platform libs like OpenCV or SFML)
-- **Multithreading** for responsive streaming
-- **Compression** for screen data
+- **NPcap, custom packets**
+- **Keyboard control using WinAPI**
+- **Mouse control and screen display using OpenCV**
+- **Multithreading**
+- **Compression**
 
 ---
 Important!
