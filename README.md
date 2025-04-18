@@ -28,7 +28,7 @@ This project focuses on high-performance transmission using custom protocol desi
 ---
 Important!
 
-In order to run the program with the libraries I used, you must download them from their official website, and place it in the folder outside of the program itself.
-wxWidgets - https://www.wxwidgets.org/downloads , call the folder "wxWidgets"
-openCV - https://opencv.org/releases , call the folder "opencvBuild"
+- In order to run the program with the libraries I used, you must download them from their official website, and place it in the folder outside of the program itself.
+- wxWidgets - https://www.wxwidgets.org/downloads , call the folder "wxWidgets"
+- openCV - https://opencv.org/releases , call the folder "opencvBuild"
 
