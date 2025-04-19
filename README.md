@@ -2,18 +2,18 @@
 
 A peer-to-peer remote desktop system built in C++ that allows one machine to view and control another machine’s screen in real time.
 
-This project focuses on high-performance transmission using custom protocol design, screen capture optimization, and low-level network programming.
+This project focuses on communication using custom protocol design, screen capture optimization, low-level network programming, and secured data.
 
 ---
 
 ## ✨ Features
 
-- 📺 **Real-time screen sharing** at high frame rates
+- 📺 **Real-time screen sharing** at moderate frame rates
 - 🧠 **Peer-to-peer (P2P)** architecture – no central server
 - 📡 **Raw socket communication** (TCP or UDP) with custom protocol
 - 🖱️ **Remote mouse and keyboard control**
 - 🧮 **Network traffic optimization** - H264 compression
-- 🔐 Potential for future encryption and authentication modules
+- 🔐 Encryption and authentication modules (has to enter a password in order to connect)
 
 ---
 
