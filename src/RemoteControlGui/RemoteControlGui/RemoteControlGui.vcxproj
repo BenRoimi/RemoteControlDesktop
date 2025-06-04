@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>17.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{df2eac7b-0dbf-408d-bdd7-bbe3a95a3ccf}</ProjectGuid>
+    <RootNamespace>RemoteControlGui</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>../../../../wxWidgets-3.2.6/include;../../../../wxWidgets-3.2.6/include/msvc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>../../../../wxWidgets-3.2.6/lib/vc_lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>../../../../wxWidgets-3.2.6/include;../../../../wxWidgets-3.2.6/include/msvc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>../../../../wxWidgets-3.2.6/lib/vc_lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>../../../../wxWidgets/include;../../../../wxWidgets/include/msvc;../../../dep/ffmpeg-7.1-full_build-shared/include;../../../../opencvBuild/include;../../../dep/npcap-sdk-1.13/Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>../../../../wxWidgets/lib/vc_x64_lib;../../../dep/ffmpeg-7.1-full_build-shared/lib;../../../../opencvBuild/x64/vc16/lib;../../../dep/npcap-sdk-1.13/Lib/x64</AdditionalLibraryDirectories>
+      <AdditionalDependencies>wpcap.lib;Packet.lib;avcodec.lib;avdevice.lib;avfilter.lib;avformat.lib;avutil.lib;postproc.lib;swresample.lib;swscale.lib;opencv_world4100d.lib;opencv_world4100.lib;;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>../../../../wxWidgets/include;../../../../wxWidgets/include/msvc;../../../dep/ffmpeg-7.1-full_build-shared/include;../../../../opencvBuild/include;../../../dep/npcap-sdk-1.13/Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>../../../../wxWidgets/lib/vc_x64_lib;../../../dep/ffmpeg-7.1-full_build-shared/lib;../../../../opencvBuild/x64/vc16/lib;../../../dep/npcap-sdk-1.13/Lib/x64</AdditionalLibraryDirectories>
+      <AdditionalDependencies>wpcap.lib;Packet.lib;avcodec.lib;avdevice.lib;avfilter.lib;avformat.lib;avutil.lib;postproc.lib;swresample.lib;swscale.lib;opencv_world4100d.lib;opencv_world4100.lib;;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="CommunicationHandlers\JsonPacketDeserializer.cpp" />
+    <ClCompile Include="CommunicationHandlers\JsonPacketSerializer.cpp" />
+    <ClCompile Include="Compressor\H264Decoder.cpp" />
+    <ClCompile Include="Compressor\H264Encoder.cpp" />
+    <ClCompile Include="ConnectionHelpers\UDPChunksReceiver.cpp" />
+    <ClCompile Include="ConnectionHelpers\UDPChunksTransfer.cpp" />
+    <ClCompile Include="Connection\Connection.cpp" />
+    <ClCompile Include="Connection\TCPConnection.cpp" />
+    <ClCompile Include="Connection\UDPConnection.cpp" />
+    <ClCompile Include="Crypto\Crypto.cpp" />
+    <ClCompile Include="FileTransmission\FileTransfer.cpp" />
+    <ClCompile Include="Gui\AcceptConnectionWindow.cpp" />
+    <ClCompile Include="Gui\ConnectingWindow.cpp" />
+    <ClCompile Include="Gui\ConnectWindow.cpp" />
+    <ClCompile Include="Gui\ControlButtons.cpp" />
+    <ClCompile Include="Gui\ControlPannel.cpp" />
+    <ClCompile Include="Gui\EnterPasswordWindow.cpp" />
+    <ClCompile Include="Gui\MainWindow.cpp" />
+    <ClCompile Include="Gui\MonitorSelectorWindow.cpp" />
+    <ClCompile Include="Gui\ScreenShareWindow.cpp" />
+    <ClCompile Include="Gui\SettingNagotiationWindow.cpp" />
+    <ClCompile Include="Gui\WaitWindow.cpp" />
+    <ClCompile Include="Infrastructure\Client.cpp" />
+    <ClCompile Include="Infrastructure\Server.cpp" />
+    <ClCompile Include="RemoteControlGui.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="CommunicationHandlers\Codes.h" />
+    <ClInclude Include="CommunicationHandlers\JsonPacketDeserializer.h" />
+    <ClInclude Include="CommunicationHandlers\JsonPacketSerializer.h" />
+    <ClInclude Include="CommunicationHandlers\Requests\Requests.h" />
+    <ClInclude Include="CommunicationHandlers\Responses\Responses.h" />
+    <ClInclude Include="Compressor\H264Decoder.h" />
+    <ClInclude Include="Compressor\H264Encoder.h" />
+    <ClInclude Include="ConnectionHelpers\UDPChunksReceiver.h" />
+    <ClInclude Include="ConnectionHelpers\UDPChunksTransfer.h" />
+    <ClInclude Include="Connection\Connection.h" />
+    <ClInclude Include="Connection\NetworkHeaders_Structures.h" />
+    <ClInclude Include="Connection\TCPConnection.h" />
+    <ClInclude Include="Connection\UDPConnection.h" />
+    <ClInclude Include="Crypto\Crypto.h" />
+    <ClInclude Include="FileTransmission\FileTransfer.h" />
+    <ClInclude Include="Gui\AcceptConnectionWindow.h" />
+    <ClInclude Include="Gui\ConnectingWindow.h" />
+    <ClInclude Include="Gui\ConnectWindow.h" />
+    <ClInclude Include="Gui\ControlButtons.h" />
+    <ClInclude Include="Gui\ControlPanel.h" />
+    <ClInclude Include="Gui\EnterPasswordWindow.h" />
+    <ClInclude Include="Gui\MainWindow.h" />
+    <ClInclude Include="Gui\MonitorSelectorWindow.h" />
+    <ClInclude Include="Gui\ScreenShareWindow.h" />
+    <ClInclude Include="Gui\SettingNagotiationWindow.h" />
+    <ClInclude Include="Gui\WaitWindow.h" />
+    <ClInclude Include="Infrastructure\Client.h" />
+    <ClInclude Include="Infrastructure\Server.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
