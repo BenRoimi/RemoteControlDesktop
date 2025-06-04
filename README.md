@@ -7,11 +7,11 @@
 ## 🚀 Overview
 
 **Remote Control PC** is a full-stack remote control system written in **C++**, enabling users to securely connect and control a remote computer in real time. It features:
-- 🔴 Live screen streaming (H.264 encoding)
-- ⌨️ Real-time mouse & keyboard synchronization
-- 📁 Secure file transfer between server and client
-- 🔐 Custom low-level implementation of TCP/UDP/ARP protocols
-- 🔒 End-to-end hybrid encryption using RSA and AES
+- Live screen streaming (H.264 encoding)
+- Real-time mouse & keyboard synchronization
+- Secure file transfer between server and client
+- Custom low-level implementation of TCP/UDP/ARP protocols
+- End-to-end hybrid encryption using RSA and AES
 
 ---
 
@@ -27,11 +27,11 @@
 
 | Feature | Description |
 |--------|-------------|
-| 📡 **Live Screen Sharing** | Real-time video stream from server to client using H.264 |
-| ⌨️ **Remote Input** | Sends mouse movements, keyboard input and clicks securely |
-| 📁 **File Transfer** | Two-way encrypted file sharing |
-| 🔒 **Custom Encryption** | RSA key exchange, AES session encryption |
-| 🌐 **Protocol Control** | Manual packet handling (TCP, UDP, ARP) using raw sockets |
+| **Live Screen Sharing** | Real-time video stream from server to client using H.264 |
+| **Remote Input** | Sends mouse movements, keyboard input and clicks securely |
+| **File Transfer** | Two-way encrypted file sharing |
+| **Custom Encryption** | RSA key exchange, AES session encryption |
+| **Protocol Control** | Manual packet handling (TCP, UDP, ARP) using raw sockets |
 
 ---
 
@@ -53,11 +53,11 @@
 
 ## 🔐 Security
 
-- 🔑 **RSA 2048-bit key exchange**
-- 🔐 **AES-128 encryption** for ongoing communication
-- 🧠 Authentication: Password-protected sessions
-- 🕵️‍♂️ No third-party servers – direct, private communication
-- ⚠️ MITM-resilient by secure handshake and encrypted key delivery
+- **RSA 2048-bit key exchange**
+- **AES-128 encryption** for ongoing communication
+- Authentication: Password-protected sessions
+- No third-party servers – direct, private communication
+- MITM-resilient by secure handshake and encrypted key delivery
 
 ---
 
@@ -76,11 +76,11 @@
 
 ## 🧪 Testing Highlights
 
-- ❌ Invalid IP → shows error
-- 🔐 Wrong/empty password → blocked access
-- 🧾 File overwrite warning if file already exists
-- 📤 File sending errors handled with alerts
-- 🛑 Manual disconnects gracefully terminate session
+- Invalid IP → shows error
+- Wrong/empty password → blocked access
+- File overwrite warning if file already exists
+- File sending errors handled with alerts
+- Manual disconnects gracefully terminate session
 
 ---
 
@@ -165,7 +165,7 @@ During installation, select all default options
 ### When a client attempts to connect, a prompt will appear
 ![123](https://github.com/user-attachments/assets/41eaa988-abc9-4482-9303-84bb6deeb246)
 
-### And that's it! If you decide to approve the client will now have control over your screen - keyboard and mouse
+### And that's it! If you decide to approve, the client will now have control over your screen - keyboard and mouse
 ![124](https://github.com/user-attachments/assets/209dd5bc-ec6c-4520-b423-5c236b5cbfd3)
 
 ---
