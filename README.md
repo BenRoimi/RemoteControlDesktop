@@ -74,21 +74,6 @@
 
 ---
 
-## 🛠️ Build & Run Instructions
-
-### Prerequisites:
-- Windows 10/11
-- Install [Npcap](https://npcap.com/) with WinPcap compatibility
-- Build using `CMake` or preferred IDE
-
-### Launch:
-1. Run the server app on the remote machine.
-2. Run the client app locally.
-3. Enter IP address and password.
-4. Control the screen, share files, and disconnect when done.
-
----
-
 ## 🧪 Testing Highlights
 
 - ❌ Invalid IP → shows error
